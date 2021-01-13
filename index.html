@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  ">
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
-  <h1>Shirley Limburg</h1>
-<br>
-<img src = "Pic.jpeg" alt = "Amaya and Shirley"
-max-width:64px;
-    max-height:64px;
-    width:auto;
-    height:auto;/>
 
-<p>I'm baby farm-to-table cronut hot chicken, selfies bespoke you probably haven't heard of them hexagon authentic vice man bun chicharrones poke. Heirloom gochujang forage pinterest. Dreamcatcher microdosing vape pickled. Meggings viral unicorn, edison bulb salvia hella gastropub pug pabst taxidermy pitchfork farm-to-table pinterest seitan blue bottle. Actually etsy tattooed brooklyn four loko wolf.</p>
-<p>Snackwave synth gochujang ennui selfies banjo tote bag. Whatever pug blog small batch shoreditch taiyaki aesthetic activated charcoal lomo. Before they sold out tote bag retro butcher, af food truck aesthetic 8-bit microdosing. Beard scenester lo-fi squid, hell of blue bottle vegan narwhal trust fund man bun VHS hot chicken jean shorts marfa. Portland pabst +1 next level mlkshk, jianbing air plant vaporware offal ethical twee narwhal street art everyday carry listicle. Freegan stumptown tousled hashtag cornhole mumblecore mlkshk slow-carb meggings lumbersexual.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
 
-<ul>
-  <li><a href = "https://github.com/SJLimburg/pandas-challenge">SJLimburg</a> </li>
-  <li><a href=mailto: "analyze6174@gmail.com"> Email me<a/></li>
-  <li>Spinach</li>
-  <li>Asiago Cheese</li>
-  <li>Olive oil</li>
-</ul>
-<br>
-<table>
-  <tr>
-    <th>Books</th>
-    <th>Movies</th>
-    <th>Games</th>
-  </tr>
-  <tr>
-    <td>The Hobbit</td>
-    <td>Hot Fuzz</td>
-    <td>Dark Souls</td>
-  </tr>
-  <tr>
-    <td>The Name of the Wind</td>
-    <td>The Avengers</td>
-    <td>The Last of Us</td>
-  </tr>
-  <tr>
-    <td>The Girl With All the Gifts</td>
-    <td>The Matrix</td>
-    <td>Dragon Age: Origins</td>
-  </tr>
-</table>
-
-<!-- Bonus link to last class page -->
-<a href="../../../../1/Activities/04-Stu_MyFirst_HTML/Solved/my-first-bonus.html">My First HTML Bonus</a>
-<br>
-<a href="copy.html">Click here to learn more about yourself</a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src=".plotly_app\static\js\app.js"></script>
+  <script src="./static/js/bonus.js"></script>
+  <script src="samples.json"></script>
 
 </body>
 
